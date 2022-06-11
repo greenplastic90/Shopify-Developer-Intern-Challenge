@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-qoez0a#yzl=%o-*a_6zjd-!0k9+4257&p=z9tl(6xz7n@p__(r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['80147867-e5dd-4cf1-9721-a04158db499a.id.repl.co',
+                 'shopify-developer-intern-challenge.greenplastic90.repl.co']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://shopify-developer-intern-challenge.greenplastic90.repl.co']
 
 
 # Application definition
