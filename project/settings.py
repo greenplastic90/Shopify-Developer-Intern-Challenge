@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-qoez0a#yzl=%o-*a_6zjd-!0k9+4257&p=z9tl(6xz7n@p__(r
 DEBUG = True
 
 ALLOWED_HOSTS = ['80147867-e5dd-4cf1-9721-a04158db499a.id.repl.co',
-                 'shopify-developer-intern-challenge.greenplastic90.repl.co']
+                 'shopify-developer-intern-challenge.greenplastic90.repl.co', '127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://shopify-developer-intern-challenge.greenplastic90.repl.co']
@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'inventory_items'
 ]
 
 MIDDLEWARE = [
@@ -77,24 +79,25 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'shopify_inventory_tracking',
-#         'HOST': 'localhost',
-#         'PORT': 5432
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd1m5noji97vev7',
-        'USER': 'yckgdvpcaodmpe',
-        'PASSWORD': 'e41be1e7d9720cf92d7db492bf1aa9e88f6b1a3acbfc551f4f5a835c212bb85b',
-        'HOST': 'ec2-63-35-156-160.eu-west-1.compute.amazonaws.com',
+        'NAME': 'shopify_inventory_tracking',
+        'HOST': 'localhost',
         'PORT': 5432
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'd1m5noji97vev7',
+#         'USER': 'yckgdvpcaodmpe',
+#         'PASSWORD': 'e41be1e7d9720cf92d7db492bf1aa9e88f6b1a3acbfc551f4f5a835c212bb85b',
+#         'HOST': 'ec2-63-35-156-160.eu-west-1.compute.amazonaws.com',
+#         'PORT': 5432
+#     }
+# }
 
 
 # Password validation
