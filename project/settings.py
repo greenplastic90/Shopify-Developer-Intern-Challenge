@@ -73,11 +73,21 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'shopify_inventory_tracking',
+#         'HOST': 'localhost',
+#         'PORT': 5432
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'shopify_inventory_tracking',
-        'HOST': 'localhost',
+        'NAME': 'd1m5noji97vev7',
+        'USER': 'yckgdvpcaodmpe',
+        'PASSWORD': 'e41be1e7d9720cf92d7db492bf1aa9e88f6b1a3acbfc551f4f5a835c212bb85b',
+        'HOST': 'ec2-63-35-156-160.eu-west-1.compute.amazonaws.com',
         'PORT': 5432
     }
 }
