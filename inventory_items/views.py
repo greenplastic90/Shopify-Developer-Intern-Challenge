@@ -4,8 +4,9 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
 
+from inventory_items.serializers.common import InventoryItemSerializer
 from .models import InventoryItem
-from .serializers import InventoryItemSerializer
+
 
 # Create your views here.
 
