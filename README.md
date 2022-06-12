@@ -58,7 +58,7 @@ Run the app on Replit. Now that you have built your code in GitHub, you will imp
 
 ![install](https://i.imgur.com/H0zAjkR.png)
 
-- In settings.py update `ALLOWED_HOSTS`, replace `shopify-developer-intern-challenge` with the name of your Replit repository, and replace `greenplastic90` with your Replit username
+- In settings.py update `ALLOWED_HOSTS`, replace `shopify-developer-intern-challenge` with the name of your Replit repository, and replace `greenplastic90` with your Replit username ( No Capital Letters)
 
 ![settings.py](https://i.imgur.com/nG5mJ6w.png)
 ![ALLOWED_HOSTS](https://i.imgur.com/907aeFm.png)
